@@ -7,7 +7,8 @@ class cup
 	//------------------------------------------------------------------
     public function drink($comment = "It's teatime!")
     {
-        return $comment;
+        @$this->writeToLog($comment);
+	return $comment;
     }
     public function start_security(){
 		/* prevent XSS. */
@@ -51,7 +52,6 @@ class cup
 				} else {
 						$log="";
 				}
-				date_default_timezone_set($CFG->timezone);
 				$time = date('d/m/Y_H:i:s', time());
 				$ip = $_SERVER["REMOTE_ADDR"]; // Get the IP from superglobal
 				$host = gethostbyaddr($ip);
