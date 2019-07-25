@@ -1,17 +1,28 @@
 {
     "name": "rodolfomatos/teatime",
     "type": "library",
+    "description": "xWAF + extras converted to be used with composer"
     "license": "MIT",
     "authors": [
         {
             "name": "Rodolfo Matos",
             "email": "rodolfo.matos@gmail.com"
-        }
+        },
+        {
+	    "name": "Alemalakra",
+	    "homepage": "https://github.com/Alemalakra/xWAF"
+	    
     ],
     "require": {
 	"php": ">=5.3.0"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+
     "autoload": {
         "psr-4": {
             "rodolfomatos\\teatime\\": "src/"
