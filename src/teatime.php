@@ -4,8 +4,8 @@ namespace rodolfomatos\teatime;
 
 class cup
 {
-    public function say($toSay = "It's teatime!")
+    public function drink($comment = "It's teatime!")
     {
-        return $toSay;
+        return $comment;
     }
 }
