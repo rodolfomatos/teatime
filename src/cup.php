@@ -136,6 +136,7 @@ class cup
 	}
 	function vulnDetectedHTML($Method, $BadWord, $DisplayName, $TypeVuln) {
 		header('HTTP/1.0 403 Forbidden');
+		@$this->writeToLog('Request Blocked');
 		die(); // Block request.
 	}
 	function getArray($Type) {
