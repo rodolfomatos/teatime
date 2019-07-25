@@ -1,7 +1,7 @@
 {
     "name": "rodolfomatos/teatime",
     "type": "library",
-    "description": "xWAF + extras converted to be used with composer"
+    "description": "xWAF + extras converted to be used with composer",
     "license": "MIT",
     "authors": [
         {
